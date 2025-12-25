@@ -1,0 +1,173 @@
+/*
+## Colors
+
+### Primary
+
+- Orange 500: hsl(25, 97%, 53%)
+
+### Neutral
+
+- White: hsl(0, 100%, 100%)
+- Grey 500: hsl(217, 12%, 63%)
+- Grey 900: hsl(213, 19%, 18%)
+- Grey 950: hsl(216, 12%, 8%)
+
+## Typography
+
+### Body Copy
+
+- Font size (paragraph): 15px
+
+### Font
+*/
+@import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+:root {
+    --Orange: hsl(25, 97%, 53%);
+    --White: hsl(0, 100%, 100%);
+    --Grey500: hsl(217, 12%, 63%);
+    --Grey900: hsl(213, 19%, 18%);
+    --Grey950: hsl(216, 12%, 8%);
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(216, 12%, 8%);
+    font-family: sans-serif;
+}
+
+main {
+    padding: 25px;
+    background-color: hsl(213, 19%, 18%);
+    max-width: 600px;
+    border-radius: 20px;
+}
+
+
+.experiencia {
+    display: block;
+}
+
+.header {
+    padding-bottom: 20px;
+    color: hsl(0, 100%, 100%);
+}
+
+.header h1 {
+    color: var(--White);
+}
+
+.icon {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(213, 19%, 12%);
+    border-radius: 50%;
+}
+
+.rating {
+    padding-bottom: 20px;
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    
+
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+label {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    color: hsl(0, 100%, 100%);
+    background-color: hsl(213, 19%, 12%);
+    cursor: pointer;
+    color: var(--Grey500);
+    font-weight: bold;
+
+}
+
+input[type="radio"]:checked+label {
+    background-color: var(--Orange);
+    color: black;
+}
+
+label:hover {
+    background-color: var(--White);
+    color: black;
+}
+
+.submit {
+    margin-top: 10px;
+
+}
+
+.submit button {
+    width: 100%;
+    padding: 20px 0;
+    border-radius: 20px;
+    border: none;
+    background-color: var(--Orange);
+    font-weight: bold;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+
+.submit button:hover {
+    background-color: var(--White)
+}
+
+.result {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.result-rate {
+    color: var(--Orange);
+    background-color: hsl(213, 19%, 25%);;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.result h2 {
+    color: var(--White);
+}
+
+.mensage {
+    text-align: center;
+    color: var(--Grey500);
+}
+
+footer {
+    color: var(--Grey500);
+    margin-top: 20px;
+    
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+     color: hsl(228, 45%, 44%);
+}
